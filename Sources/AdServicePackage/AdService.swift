@@ -13,7 +13,7 @@ public class AdService {
     
     public func get_ad(completion: @escaping (String?, Error?) -> Void) {
         // Define the URL for the API endpoint
-        guard let url = URL(string: "https://api.adxr.io/secondary/get-ad") else {
+        guard let url = URL(string: "https://api.adxr.io/get-ad") else {
             completion(nil, NSError(domain: "Invalid URL", code: 0, userInfo: nil))
             return
         }
